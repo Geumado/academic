@@ -323,8 +323,8 @@ body.theme-luka .experience-item {
 }
 
 body.theme-luka .institution-logo {
-  width: 52px;
-  height: 52px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
 }
 
@@ -355,6 +355,72 @@ body.theme-luka .exp-period {
 body.theme-luka .project-card {
   font-size: 15px;
   line-height: 1.7;
+}
+
+body.theme-luka .media-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+body.theme-luka .compact-media-card {
+  margin-bottom: 0;
+}
+
+body.theme-luka .media-content {
+  flex: 1;
+  min-width: 0;
+}
+
+body.theme-luka .media-image-placeholder {
+  width: 112px;
+  height: 140px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--luka-border);
+  border-radius: 12px;
+  color: var(--luka-secondary);
+  background: rgba(194, 113, 79, 0.06);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.35;
+}
+
+body.theme-luka .media-image {
+  width: 112px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+body.theme-luka .media-image-placeholder.small {
+  width: 120px;
+  height: 86px;
+}
+
+body.theme-luka .media-image-placeholder.tiny {
+  width: 96px;
+  height: 70px;
+  margin-left: auto;
+}
+
+body.theme-luka .pub-cover {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+body.theme-luka .pub-cover img {
+  display: block;
+  width: 180px;
+  height: auto;
+  border: 1px solid var(--luka-border);
+  border-radius: 4px;
 }
 
 body.theme-luka .publications ol.bibliography {
@@ -406,6 +472,10 @@ body.theme-luka .award-item {
   padding: 4px 0;
 }
 
+body.theme-luka .award-media-item {
+  align-items: center;
+}
+
 body.theme-luka .award-icon {
   flex-shrink: 0;
   font-size: 20px;
@@ -414,6 +484,24 @@ body.theme-luka .award-icon {
 body.theme-luka .award-text {
   color: var(--luka-text);
   font-size: 14px;
+}
+
+body.theme-luka .award-text p {
+  margin: 2px 0 0;
+}
+
+body.theme-luka .award-cover {
+  width: 180px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+body.theme-luka .award-cover img {
+  display: block;
+  width: 180px;
+  height: auto;
+  border: 1px solid var(--luka-border);
+  border-radius: 4px;
 }
 
 body.theme-luka .site-footer {
@@ -498,8 +586,39 @@ body.theme-luka strong {
   }
 
   body.theme-luka .institution-logo {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
+  }
+
+  body.theme-luka .media-card,
+  body.theme-luka .award-media-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  body.theme-luka .media-image-placeholder,
+  body.theme-luka .media-image-placeholder.small,
+  body.theme-luka .media-image-placeholder.tiny {
+    width: 100%;
+    max-width: 220px;
+    height: 120px;
+    margin-left: 0;
+  }
+
+  body.theme-luka .pub-cover,
+  body.theme-luka .pub-cover img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  body.theme-luka .award-cover,
+  body.theme-luka .award-cover img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-left: 0;
   }
 
   body.theme-luka .visitor-card {
